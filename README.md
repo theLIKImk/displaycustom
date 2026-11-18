@@ -29,6 +29,10 @@
 ## 效果展示
 ![玩家绑定模型](/doc/img1.png "玩家绑定模型")  
 
+## 自动构建
+
+[GitHub Actions](https://github.com/theLIKImk/displaycustom/actions/workflows/build.yml) 会在推送到 `main` 或向 `main` 提交拉取请求时运行，也可通过 **Run workflow** 手动执行。构建成功后，在当次运行页面的 **Artifacts** 下载 `paper-plugin` 或 `blockbench-plugin`。
+
 ## 从源码构建
 
 使用 JDK 25、Maven 3.9+ 和 Node.js 22+，在仓库根目录运行：
