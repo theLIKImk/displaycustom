@@ -38,7 +38,7 @@
 
 基础姿态优先级为睡眠、乘坐、飞行、游泳、攀爬、离地、潜行、地面移动、站立。插件先查状态标签，再查同名动画。`run` 可回退到 `walk`，`sneak_walk` 可回退到 `sneak` 或 `walk`，`fall` 可回退到 `jump`。最终尝试 `stand`、旧名称 `idle` 或模型的基础姿态。
 
-- **受伤**使用 `"tags": ["hurt"], "loop": false, "parallel": true`。该动作只使用 `hurt` 标签，无需 `itemUse`。做受伤表情时只给眼睛和嘴巴设轨道，跑步和武器动作便可继续。要瞬间切换五官可在轨道中使用 `visible` 和 `"interpolation": "step"`。编辑器默认允许 32 段普通动画另加一段受伤动画，所有轨道共用关键帧额度。
+- **受伤**使用 `"tags": ["hurt"], "loop": false, "parallel": true`。该动作只使用 `hurt` 标签，无需 `itemUse`。做受伤表情时只给眼睛和嘴巴设轨道，跑步和武器动作便可继续。要瞬间切换五官可在轨道中使用 `visible` 和 `"interpolation": "step"`。所有轨道共用关键帧额度。
 - **死亡**按动画名称 `death` 触发，是单独的事件。建议使用 `"loop": false`；`death` 不可写入 `tags`。
 
 ## 物品动作与握点
