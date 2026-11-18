@@ -37,6 +37,23 @@
 
 [模型库](https://github.com/theLIKImk/displaycustom-models).
 
+## 权限节点
+
+| 权限节点 | 用途 | 默认 |
+|---|---|---|
+| `displaycustom.admin` | 管理员权限，包含下列全部权限 | OP |
+| `displaycustom.info` | 查看帮助、模型信息、实例列表和资源包说明 | 所有人 |
+| `displaycustom.use` | 绑定或卸载自己的模型，切换自己的模型显示 | OP |
+| `displaycustom.use.others` | 给其他玩家绑定模型，另需 `displaycustom.use` | OP |
+| `displaycustom.spawn` | 生成持久化展示模型 | OP |
+| `displaycustom.remove` | 移除模型实例 | OP |
+| `displaycustom.play` | 播放放置模型的动画 | OP |
+| `displaycustom.stop` | 停止放置模型的动画 | OP |
+| `displaycustom.clear` | 清理所有放置模型及玩家绑定 | OP |
+| `displaycustom.reload` | 重载模型、配置和语言文件 | OP |
+| `displaycustom.itemtest` | 获取资源包测试物品 | OP |
+| `displaycustom.debug` | 保留的调试权限节点。`/dc debug playerstatus` 实际检查 `displaycustom.admin` | 关闭 |
+
 ## 自动构建
 
 [GitHub Actions](https://github.com/theLIKImk/displaycustom/actions/workflows/build.yml) 会在推送到 `main` 或向 `main` 提交拉取请求时运行，也可通过 **Run workflow** 手动执行。构建成功后，在当次运行页面的 **Artifacts** 下载 `paper-plugin` 或 `blockbench-plugin`。
