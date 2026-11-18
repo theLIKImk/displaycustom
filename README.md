@@ -55,3 +55,4 @@ node scripts/build-blockbench-plugin.mjs
 
 - [Paper 插件 API](docs/PLUGIN_API.md)
 - [Blockbench 使用说明](docs/blockbench-bridge.md)
+- [建模标签基准](docs/MODEL_TAGS.md)

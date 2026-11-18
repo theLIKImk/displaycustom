@@ -1,5 +1,7 @@
 # Blockbench Bridge 0.1.0
 
+[建模标签基准](https://github.com/theLIKImk/displaycustom/blob/main/docs/MODEL_TAGS.md)
+
 适用 Blockbench 5.x 和 Display Custom 0.0.1。桥接读写 Display Custom JSON v1–v9。插件文件名为 `display_custom_bridge.js`。
 
 ## 安装与使用
