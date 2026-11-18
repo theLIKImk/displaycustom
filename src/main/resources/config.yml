@@ -1,0 +1,22 @@
+# 自定义展示实体
+language: zh_cn
+use-player-locale: true
+
+# Display Custom 数量限制配置
+# 每项为该模型允许的最大数量；值设为 -1 表示无上限。
+# 修改后执行 /dc reload 生效；设为无上限时不再校验对应数量，
+# 极大模型会增加内存、网络同步与客户端渲染负担，请按服务器性能设置。
+
+limits:
+  # 每个模型的可见部件数量（原版上限 128，本工作区扩展版默认 1024）
+  max-parts: 1024
+  # 每个模型的普通动画数量，可另外定义一段 hurt 受伤动画
+  max-animations: 32
+  # 每个动画的声音事件数量
+  max-sounds-per-animation: 128
+  # 每条动画轨道的关键帧数量
+  max-frames-per-track: 128
+  # 全服同时存在的模型实例数量上限（含绑定模型与放置模型）
+  max-instances: 32
+  # 全服所有模型实例的展示实体（部件）数量总和上限；-1 为无上限
+  max-total-entities: -1

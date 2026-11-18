@@ -1,0 +1,2 @@
+* text=auto eol=lf
+src/test/resources/fixtures/demo.json -text whitespace=cr-at-eol

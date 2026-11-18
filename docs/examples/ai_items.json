@@ -1,0 +1,49 @@
+{
+  "version": 6,
+  "name": "ai_items",
+  "parts": [
+    {
+      "id": "red_cube",
+      "type": "item",
+      "material": "IRON_BLOCK",
+      "itemMaterial": "PAPER",
+      "itemModel": "display_custom:colors/ff0000",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "gem",
+      "type": "item",
+      "material": "IRON_BLOCK",
+      "itemMaterial": "DIAMOND",
+      "position": [
+        1.2,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  ]
+}

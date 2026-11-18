@@ -1,0 +1,285 @@
+{
+  "version": 5,
+  "name": "advanced_demo",
+  "groups": [
+    {
+      "id": "rig",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "group"
+    },
+    {
+      "id": "upper",
+      "group": "rig",
+      "kind": "bone",
+      "length": 1,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "lower",
+      "group": "upper",
+      "kind": "bone",
+      "length": 1,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "upper_part",
+      "type": "block",
+      "material": "CYAN_CONCRETE",
+      "group": "upper",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.18,
+        1,
+        0.18
+      ]
+    },
+    {
+      "id": "lower_part",
+      "type": "block",
+      "material": "ORANGE_CONCRETE",
+      "group": "lower",
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        1,
+        0.16
+      ]
+    },
+    {
+      "id": "image",
+      "type": "item",
+      "itemMaterial": "PAPER",
+      "itemModel": "display_custom_test:picture",
+      "group": "lower",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "caption",
+      "type": "text",
+      "text": "开始 / START",
+      "textStyle": {
+        "color": "#ff5555",
+        "opacity": 255,
+        "backgroundColor": "#112233",
+        "backgroundOpacity": 160,
+        "shadow": true,
+        "seeThrough": false,
+        "alignment": "center",
+        "lineWidth": 200,
+        "bold": false,
+        "italic": false
+      },
+      "position": [
+        2,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  ],
+  "animations": {
+    "demo": {
+      "duration": 2,
+      "loop": true,
+      "tracks": {
+        "upper": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              -30
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 2,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              30
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "caption": [
+          {
+            "time": 0,
+            "position": [
+              2,
+              1,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              0.7,
+              0.7
+            ],
+            "text": "开始 / START",
+            "textStyle": {
+              "color": "#ff5555",
+              "opacity": 255,
+              "backgroundColor": "#112233",
+              "backgroundOpacity": 160,
+              "shadow": true,
+              "seeThrough": false,
+              "alignment": "center",
+              "lineWidth": 200,
+              "bold": false,
+              "italic": false
+            }
+          },
+          {
+            "time": 2,
+            "position": [
+              2,
+              1,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              0.7,
+              0.7
+            ],
+            "text": "结束 / END",
+            "textStyle": {
+              "color": "#5599ff",
+              "opacity": 30,
+              "backgroundColor": "#112233",
+              "backgroundOpacity": 160,
+              "shadow": true,
+              "seeThrough": false,
+              "alignment": "center",
+              "lineWidth": 200,
+              "bold": false,
+              "italic": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

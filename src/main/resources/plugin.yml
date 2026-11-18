@@ -1,0 +1,58 @@
+name: DisplayCustom
+prefix: 自定义展示实体
+version: '0.0.1'
+main: io.github.displaycustom.DisplayCustomPlugin
+api-version: '26.3'
+description: 自定义展示实体 · Multipart display models and animations
+commands:
+  dc:
+    description: Manage display models and player bindings
+    usage: /dc <spawn|itemtest|pack|modelinfo|use|takeoff|showmemodel|debug|list|remove|clear|play|stop|reload>
+permissions:
+  displaycustom.admin:
+    default: op
+    children:
+      displaycustom.info: true
+      displaycustom.use: true
+      displaycustom.use.others: true
+      displaycustom.spawn: true
+      displaycustom.remove: true
+      displaycustom.play: true
+      displaycustom.stop: true
+      displaycustom.clear: true
+      displaycustom.reload: true
+      displaycustom.itemtest: true
+      displaycustom.debug: true
+  displaycustom.info:
+    description: 查看帮助、模型信息、列表和资源包说明
+    default: true
+  displaycustom.use:
+    description: 绑定、卸载自己的模型及 /dc showmemodel 切换
+    default: op
+  displaycustom.use.others:
+    description: 允许 use 命令指定在线玩家（还需 displaycustom.use）
+    default: op
+  displaycustom.spawn:
+    description: 生成持久化展示模型
+    default: op
+  displaycustom.remove:
+    description: 删除任意模型实例
+    default: op
+  displaycustom.play:
+    description: 播放任意放置模型的动画
+    default: op
+  displaycustom.stop:
+    description: 停止任意放置模型的动画
+    default: op
+  displaycustom.clear:
+    description: 清除全部放置模型及玩家绑定
+    default: op
+  displaycustom.reload:
+    description: 重载模型定义
+    default: op
+  displaycustom.itemtest:
+    description: 获取测试物品
+    default: op
+  displaycustom.debug:
+    description: 使用 /dc debug playerstatus 全局开关玩家状态调试面板（保留兼容，推荐直接用 admin）
+    default: false

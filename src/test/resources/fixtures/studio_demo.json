@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "name": "studio_demo",
+  "groups": [{"id":"assembly","position":[0,0,0],"rotation":[0,0,0],"scale":[1,1,1]}],
+  "parts": [
+    {"id":"base","group":"assembly","material":"CYAN_CONCRETE","position":[0,0.5,0],"rotation":[0,0,0],"scale":[1.5,1,0.5]},
+    {"id":"arm","group":"assembly","type":"item","itemMaterial":"DIAMOND_SWORD","position":[1,1,0],"rotation":[0,0,0],"scale":[1,1,1]},
+    {"id":"label","group":"assembly","type":"text","text":"多个动画 + 元素组 + 声音","position":[0,2,0],"rotation":[0,0,0],"scale":[0.6,0.6,0.6]}
+  ],
+  "animations": {
+    "rise": {"duration":2,"loop":true,"tracks":{"assembly":[
+      {"time":0,"position":[0,0,0],"rotation":[0,0,0],"scale":[1,1,1]},
+      {"time":1,"position":[0,1,0],"rotation":[0,0,0],"scale":[1,1,1]},
+      {"time":2,"position":[0,0,0],"rotation":[0,0,0],"scale":[1,1,1]}
+    ]},"sounds":[{"time":0,"sound":"minecraft:block.note_block.pling","volume":0.7,"pitch":1},{"time":1,"sound":"minecraft:block.note_block.pling","volume":0.7,"pitch":1.5}]},
+    "spin": {"duration":2,"loop":true,"tracks":{"arm":[
+      {"time":0,"position":[1,1,0],"rotation":[0,0,0],"scale":[1,1,1]},
+      {"time":2,"position":[1,1,0],"rotation":[0,360,0],"scale":[1,1,1]}
+    ]}}
+  },
+  "playback":{"animations":["rise","spin"]}
+}

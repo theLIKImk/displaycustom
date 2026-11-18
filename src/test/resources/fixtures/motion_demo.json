@@ -1,0 +1,291 @@
+{
+  "version": 6,
+  "name": "motion_demo",
+  "parts": [
+    {
+      "id": "block",
+      "type": "block",
+      "material": "CYAN_CONCRETE",
+      "position": [
+        -1.25,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "group": "root"
+    },
+    {
+      "id": "sword",
+      "type": "item",
+      "material": "IRON_BLOCK",
+      "itemMaterial": "DIAMOND_SWORD",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "group": "root"
+    },
+    {
+      "id": "colored_cube",
+      "type": "item",
+      "material": "IRON_BLOCK",
+      "itemMaterial": "PAPER",
+      "itemModel": "display_custom:colors/purple",
+      "position": [
+        1.25,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "group": "root"
+    },
+    {
+      "id": "label",
+      "type": "text",
+      "material": "IRON_BLOCK",
+      "text": "Display Custom\n方块 · 物品 · 文字",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "group": "root"
+    }
+  ],
+  "animations": {
+    "stop_motion": {
+      "duration": 2,
+      "loop": true,
+      "interpolation": "step",
+      "tracks": {
+        "root": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "time": 0.5,
+            "position": [
+              1,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "time": 1,
+            "position": [
+              2,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "visible": false
+          },
+          {
+            "time": 1.5,
+            "position": [
+              -1,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "visible": true
+          },
+          {
+            "time": 2,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "visible": true
+          }
+        ],
+        "label": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              2,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "text": "定格 A",
+            "textStyle": {
+              "color": "#ff5555",
+              "opacity": 255
+            }
+          },
+          {
+            "time": 0.5,
+            "position": [
+              0,
+              2,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "text": "定格 B",
+            "textStyle": {
+              "color": "#5555ff",
+              "opacity": 160
+            }
+          },
+          {
+            "time": 1.5,
+            "position": [
+              0,
+              2,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "text": "重新显示",
+            "textStyle": {
+              "color": "#55ff55",
+              "opacity": 255
+            }
+          }
+        ]
+      }
+    }
+  },
+  "groups": [
+    {
+      "id": "root",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

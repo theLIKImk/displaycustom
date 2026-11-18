@@ -1,0 +1,11 @@
+target/
+editor/node_modules/
+editor/dist/
+.tools/
+*.log
+.test-server/
+release/
+resource-pack/
+src/main/resources/resourcepacks/*.zip
+__pycache__/
+*.blend1

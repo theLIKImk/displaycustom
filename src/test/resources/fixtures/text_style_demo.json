@@ -1,0 +1,9 @@
+{
+  "version": 4,
+  "name": "text_style_demo",
+  "parts": [
+    {"id":"title","type":"text","text":"Display Custom · 文字样式","position":[0,3,0],"rotation":[0,0,0],"scale":[0.7,0.7,0.7],"textStyle":{"color":"#ffdd55","opacity":255,"backgroundColor":"#112233","backgroundOpacity":192,"shadow":true,"seeThrough":false,"alignment":"center","lineWidth":250,"bold":true,"italic":false}},
+    {"id":"cyan_label","type":"text","text":"青色文字 70%\n深蓝背景 50%","position":[0,1.6,0],"rotation":[0,0,0],"scale":[0.7,0.7,0.7],"textStyle":{"color":"#55ddff","opacity":179,"backgroundColor":"#112244","backgroundOpacity":128,"shadow":false,"seeThrough":false,"alignment":"left","lineWidth":180,"bold":false,"italic":false}},
+    {"id":"pink_label","type":"text","text":"粉色斜体 · 透明背景","position":[0,0.4,0],"rotation":[0,0,0],"scale":[0.7,0.7,0.7],"textStyle":{"color":"#ff88cc","opacity":255,"backgroundColor":"#000000","backgroundOpacity":0,"shadow":true,"seeThrough":true,"alignment":"right","lineWidth":200,"bold":false,"italic":true}}
+  ]
+}

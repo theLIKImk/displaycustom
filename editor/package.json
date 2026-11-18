@@ -1,0 +1,19 @@
+{
+  "name": "display-custom-editor",
+  "version": "0.11.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node --test test/*.test.js",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.1"
+  }
+}

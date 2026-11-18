@@ -1,0 +1,865 @@
+{
+  "version": 5,
+  "name": "humanoid_demo",
+  "groups": [
+    {
+      "id": "rig",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "pelvis",
+      "kind": "bone",
+      "group": "rig",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.2
+    },
+    {
+      "id": "spine",
+      "kind": "bone",
+      "group": "pelvis",
+      "position": [
+        0,
+        0.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.25
+    },
+    {
+      "id": "chest",
+      "kind": "bone",
+      "group": "spine",
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.25
+    },
+    {
+      "id": "neck",
+      "kind": "bone",
+      "group": "chest",
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.12
+    },
+    {
+      "id": "head",
+      "kind": "bone",
+      "group": "neck",
+      "position": [
+        0,
+        0.12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.22
+    },
+    {
+      "id": "left_upper_arm",
+      "kind": "bone",
+      "group": "chest",
+      "position": [
+        0.27,
+        0.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -80
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.34
+    },
+    {
+      "id": "left_forearm",
+      "kind": "bone",
+      "group": "left_upper_arm",
+      "position": [
+        0,
+        0.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.32
+    },
+    {
+      "id": "left_thigh",
+      "kind": "bone",
+      "group": "pelvis",
+      "position": [
+        0.13,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.45
+    },
+    {
+      "id": "left_shin",
+      "kind": "bone",
+      "group": "left_thigh",
+      "position": [
+        0,
+        0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.43
+    },
+    {
+      "id": "right_upper_arm",
+      "kind": "bone",
+      "group": "chest",
+      "position": [
+        -0.27,
+        0.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        80
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.34
+    },
+    {
+      "id": "right_forearm",
+      "kind": "bone",
+      "group": "right_upper_arm",
+      "position": [
+        0,
+        0.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.32
+    },
+    {
+      "id": "right_thigh",
+      "kind": "bone",
+      "group": "pelvis",
+      "position": [
+        -0.13,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        180
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.45
+    },
+    {
+      "id": "right_shin",
+      "kind": "bone",
+      "group": "right_thigh",
+      "position": [
+        0,
+        0.45,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "length": 0.43
+    }
+  ],
+  "parts": [
+    {
+      "id": "hips",
+      "type": "block",
+      "group": "pelvis",
+      "material": "BLUE_CONCRETE",
+      "position": [
+        0,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.2,
+        0.22
+      ]
+    },
+    {
+      "id": "torso",
+      "type": "block",
+      "group": "spine",
+      "material": "CYAN_CONCRETE",
+      "position": [
+        0,
+        0.18,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.44,
+        0.4,
+        0.22
+      ]
+    },
+    {
+      "id": "head_mesh",
+      "type": "block",
+      "group": "head",
+      "material": "WHITE_CONCRETE",
+      "position": [
+        0,
+        0.11,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.32,
+        0.32,
+        0.3
+      ]
+    },
+    {
+      "id": "left_eye",
+      "type": "block",
+      "group": "head",
+      "material": "BLACK_CONCRETE",
+      "position": [
+        0.075,
+        0.15,
+        0.155
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.045,
+        0.045,
+        0.025
+      ]
+    },
+    {
+      "id": "right_eye",
+      "type": "block",
+      "group": "head",
+      "material": "BLACK_CONCRETE",
+      "position": [
+        -0.075,
+        0.15,
+        0.155
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.045,
+        0.045,
+        0.025
+      ]
+    },
+    {
+      "id": "left_arm_mesh",
+      "type": "block",
+      "group": "left_upper_arm",
+      "material": "CYAN_CONCRETE",
+      "position": [
+        0,
+        0.17,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.115,
+        0.32,
+        0.13
+      ]
+    },
+    {
+      "id": "left_forearm_mesh",
+      "type": "block",
+      "group": "left_forearm",
+      "material": "WHITE_CONCRETE",
+      "position": [
+        0,
+        0.16,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.3,
+        0.115
+      ]
+    },
+    {
+      "id": "left_hand",
+      "type": "block",
+      "group": "left_forearm",
+      "material": "WHITE_CONCRETE",
+      "position": [
+        0,
+        0.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.13,
+        0.12,
+        0.13
+      ]
+    },
+    {
+      "id": "left_thigh_mesh",
+      "type": "block",
+      "group": "left_thigh",
+      "material": "BLUE_CONCRETE",
+      "position": [
+        0,
+        0.225,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.43,
+        0.18
+      ]
+    },
+    {
+      "id": "left_shin_mesh",
+      "type": "block",
+      "group": "left_shin",
+      "material": "LIGHT_GRAY_CONCRETE",
+      "position": [
+        0,
+        0.215,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.14,
+        0.41,
+        0.16
+      ]
+    },
+    {
+      "id": "left_foot",
+      "type": "block",
+      "group": "left_shin",
+      "material": "GRAY_CONCRETE",
+      "position": [
+        0,
+        0.43,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.19,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "id": "right_arm_mesh",
+      "type": "block",
+      "group": "right_upper_arm",
+      "material": "CYAN_CONCRETE",
+      "position": [
+        0,
+        0.17,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.115,
+        0.32,
+        0.13
+      ]
+    },
+    {
+      "id": "right_forearm_mesh",
+      "type": "block",
+      "group": "right_forearm",
+      "material": "WHITE_CONCRETE",
+      "position": [
+        0,
+        0.16,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.3,
+        0.115
+      ]
+    },
+    {
+      "id": "right_hand",
+      "type": "block",
+      "group": "right_forearm",
+      "material": "WHITE_CONCRETE",
+      "position": [
+        0,
+        0.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.13,
+        0.12,
+        0.13
+      ]
+    },
+    {
+      "id": "right_thigh_mesh",
+      "type": "block",
+      "group": "right_thigh",
+      "material": "BLUE_CONCRETE",
+      "position": [
+        0,
+        0.225,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.43,
+        0.18
+      ]
+    },
+    {
+      "id": "right_shin_mesh",
+      "type": "block",
+      "group": "right_shin",
+      "material": "LIGHT_GRAY_CONCRETE",
+      "position": [
+        0,
+        0.215,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.14,
+        0.41,
+        0.16
+      ]
+    },
+    {
+      "id": "right_foot",
+      "type": "block",
+      "group": "right_shin",
+      "material": "GRAY_CONCRETE",
+      "position": [
+        0,
+        0.43,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.19,
+        0.12,
+        0.3
+      ]
+    }
+  ],
+  "animations": {
+    "wave": {
+      "duration": 2,
+      "loop": true,
+      "tracks": {
+        "left_forearm": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0.34,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 0.5,
+            "position": [
+              0,
+              0.34,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              70
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 1,
+            "position": [
+              0,
+              0.34,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              15
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 1.5,
+            "position": [
+              0,
+              0.34,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              70
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 2,
+            "position": [
+              0,
+              0.34,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    "turn": {
+      "duration": 4,
+      "loop": true,
+      "tracks": {
+        "rig": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 4,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              360,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
