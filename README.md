@@ -8,7 +8,7 @@
 （Blockbench 扩展编辑模型）  
 
 > [!IMPORTANT]
-> 本插件仅为给Minecraft插件服务端添加可玩性功能，不推荐使用此类插件做出内容不当的模型。
+> 本插件仅为给Minecraft插件服务端添加可玩性/装饰性功能，不推荐使用此类插件做出内容不当的模型。
 >
 > 使用模型必须遵守[MINECRAFT EULA](https://www.minecraft.net/zh-hans/eula)；  
 > 使用本插件时请勿滥用功能，您也必须要注意此插件容易意遇到版权问题；  
